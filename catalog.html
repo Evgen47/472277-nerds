@@ -27,13 +27,41 @@
   <h1 class="page-title">Магазин готовых шаблонов</h1>
   <section class="filters">
     <h2 class="visually-hidden">Фильтр шаблонов</h2>
-    <b>Стоимость</b>
-    <!--Здесь будет форма стоимости-->
-    <b>Сетка</b>
-    <!--Здесь будет форма сетки-->
-    <b>Особенности:</b>
-    <!--Здесь будет форма особенности-->
-    <a class="button">Показать</a>
+    <aside class="filter">
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="price">
+          <legend class="name-list">Стоимость:</legend>
+          <input type="range" name="price" min="0" max="15000">
+          <span>от</span>
+          <output class="output-min" name="price-min">0</output>
+          <span>до</span>
+          <output class="output-max" name="price-max">15000</output>
+        </fieldset>
+        <fieldset class="layout">
+          <legend class="name-list">Сетка:</legend>
+          <input type="radio" class="radio-button" name="layout" id="radio-adaptive" checked value="adaptive">
+          <label for="radio-adaptive" class="radio-name">Адаптивная</label>
+          <input type="radio" class="radio-button" name="layout" id="radio-fixed" value="fixed">
+          <label for="radio-fixed" class="radio-name">Фиксированная</label>
+          <input type="radio" class="radio-button" name="layout" id="radio-fluid-layout" value="stretchy">
+          <label for="radio-fluid-layout" class="radio-name">Резиновая</label>
+        </fieldset>
+        <fieldset class="features">
+          <legend class="name-list">Особенности:</legend>
+          <input type="checkbox" class="checkbox-button" name="slider" id="checkbox-slider" checked>
+          <label for="checkbox-slider" class="checkbox-name">Слайдер</label>
+          <input type="checkbox" class="checkbox-button" name="features" id="checkbox-features">
+          <label for="checkbox-features" class="checkbox-name">Блок преимуществ</label>
+          <input type="checkbox" class="checkbox-button" name="news" id="checkbox-news" checked>
+          <label for="checkbox-news" class="checkbox-name">Новости</label>
+          <input type="checkbox" class="checkbox-button" name="gallery" id="checkbox-gallery">
+          <label for="checkbox-gallery" class="checkbox-name">Галерея</label>
+          <input type="checkbox" class="checkbox-button" name="cart" id="checkbox-cart">
+          <label for="checkbox-cart" class="checkbox-name">Корзина</label>
+        </fieldset>
+        <button type="submit" class="button-filter">показать</button>
+      </form>
+    </aside>
   </section>
   <section class="sort">
     <h2 class="visually-hidden">Сортировка товара</h2>
