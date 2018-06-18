@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>Каталог дизайн-студии Nerd's</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог дизайн-студии Nerd's</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
 <body>
 <header class="main-header">
   <nav class="main-navigation">
@@ -75,7 +78,7 @@
           <label for="checkbox-cart" class="checkbox-name">Корзина</label>
           </div>
         </fieldset>
-        <button type="submit" class="button-filter">показать</button>
+        <button type="submit" class="filter-button">Показать</button>
       </form>
     </aside>
   </section>
@@ -83,13 +86,13 @@
     <h2 class="visually-hidden">Сортировка товара</h2>
     <b>Сортировать:</b>
     <ul class="sort-by-class">
-      <li class="sort-item item-1">
+      <li class="sort-item">
         <a href="#" class="by-price">По цене</a>
       </li>
-      <li class="sort-item item-2">
+      <li class="sort-item">
         <a href="#" class="by-type">По типу</a>
       </li>
-      <li class="sort-item item-3">
+      <li class="sort-item">
         <a href="#" class="by-name">По названию</a>
       </li>
     </ul>
@@ -104,7 +107,7 @@
         <div class="catalog-item-card">
           <h3><a href="#">Sedona</a></h3>
           <p>Информационный сайт для туристов</p>
-          <input type="submit" value="9900 руб">
+          <input class="catalog-button" type="submit" value="9900 руб">
         </div>
       </li>
       <li class="catalog-item">
@@ -112,7 +115,7 @@
         <div class="catalog-item-card">
           <h3><a href="#">Pink App</a></h3>
           <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <input type="submit" value="9900 руб">
+          <input class="catalog-button" type="submit" value="9900 руб">
         </div>
       </li>
       <li class="catalog-item">
