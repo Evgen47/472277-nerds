@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="container main-navigation">
+      <div class="container main-navigation">
         <a class="main-header-logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
         </a>
@@ -22,11 +22,11 @@
         <ul class="user-navigation">
           <li><a href="cart.html"><img src="img/cart-icon.svg" alt="Иконка корзины">Корзина</a></li>
         </ul>
-      </nav>
+      </div>
   </header>
     <main class="container">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-      <section class="filter">
+      <div class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter-group" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="range-list">
@@ -113,9 +113,9 @@
           </fieldset>
           <button class="button button-show" type="submit">Показать</button>
         </form>
-      </section>
+      </div>
       <div class="templates-wrapper">
-        <section class="sort">
+        <div class="sort">
           <h2 class="visually-hidden">Сортировка товара</h2>
           <b>Сортировать:</b>
           <div class="sort-container">
@@ -149,7 +149,7 @@
               </li>
             </ul>
           </div>
-        </section>
+        </div>
         <section class="catalog">
         <h2 class="visually-hidden">Список шаблонов</h2>
           <ul class="catalog-list">
@@ -256,14 +256,14 @@
               </div>
             </li>
           </ul>
-          <section class="main-pages">
-            <ul class="pagination-list">
-              <li><a class="page-button page-1 page-current" href="#">1</a></li>
-              <li><a class="page-button page-2" href="#">2</a></li>
-              <li><a class="page-button page-3" href="#">3</a></li>
-              <li><a class="page-button page-next" href="#">Следующая</a></li>
-            </ul>
-          </section>
+        <div class="main-pages">
+          <ul class="pagination-list">
+            <li><a class="page-button page-1 page-current" href="#">1</a></li>
+            <li><a class="page-button page-2" href="#">2</a></li>
+            <li><a class="page-button page-3" href="#">3</a></li>
+            <li><a class="page-button page-next" href="#">Следующая</a></li>
+          </ul>
+        </div>
         </section>
       </div>
     </main>
