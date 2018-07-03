@@ -8,127 +8,127 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container main-navigation">
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a href="cart.html"><img src="img/cart-icon.svg" alt="Иконка корзины">Корзина</a></li>
-        </ul>
-      </div>
+  <header class="main-header">
+    <nav class="container main-navigation">
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+      </a>
+      <ul class="site-navigation">
+        <li class="navigation-item"><a class="navigation-link current-link" href="index.html">Студия</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="clients.html">Клиенты</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="catalog.html">Магазин</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="basket-list">
+        <li class="basket-item"><a class="navigation-link basket" href="basket.html">Корзина</a></li>
+      </ul>
+    </nav>
   </header>
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
-    <main class="container">
-      <div class="row filter">
-        <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <form class="filter-group" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="range-list">
-            <legend>Стоимость:</legend>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
-              </div>
-              <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="radio-list">
-            <legend>Сетка:</legend>
-            <ul class="radio-item">
-              <li class="filter-radio">
-                <label class="radio-container">
-                  <input class="visually-hidden" type="radio" name="filter-group" id="adaptive-id" checked>
-                  <span class="radio-indicator"></span>
-                  Адаптивная
-                </label>
-              </li>
-              <li class="filter-radio">
-                <label class="radio-container">
-                  <input class="visually-hidden" type="radio" name="filter-group" id="fixed-id">
-                  <span class="radio-indicator"></span>
-                  Фиксированная
-                </label>
-              </li>
-              <li class="filter-radio">
-                <label class="radio-container">
-                  <input class="visually-hidden" type="radio" name="filter-group" id="rubber-id">
-                  <span class="radio-indicator"></span>
-                  Резиновая
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="checkbox-list">
-            <legend>Особенности:</legend>
-            <ul class="checkbox-item">
-              <li class="filter-checkbox">
-                <label class="checkbox-container">
-                  <input class="visually-hidden" type="checkbox" name="slider" id="slider-id" checked>
-                  <span class="checkbox-indicator"></span>
-                  Слайдер
-                </label>
-              </li>
-              <li class="filter-checkbox">
-                <label class="checkbox-container">
-                  <input class="visually-hidden" type="checkbox" name="advantage-block" id="advantage-block-id">
-                  <span class="checkbox-indicator"></span>
-                  Блок преимуществ
-                </label>
-              </li>
-              <li class="filter-checkbox">
-                <label class="checkbox-container">
-                  <input class="visually-hidden" type="checkbox" name="tidings" id="tidings-id">
-                  <span class="checkbox-indicator"></span>
-                  Новости
-                </label>
-              </li>
-              <li class="filter-checkbox">
-                <label class="checkbox-container">
-                  <input class="visually-hidden" type="checkbox" name="gallery" id="gallery-id">
-                  <span class="checkbox-indicator"></span>
-                  Галерея
-                </label>
-              </li>
-              <li class="filter-checkbox">
-                <label class="checkbox-container">
-                  <input class="visually-hidden" type="checkbox" name="chip-basket" id="chip-basket-id">
-                  <span class="checkbox-indicator"></span>
-                  Корзина
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button button-show" type="submit">Показать</button>
-        </form>
+    <main class="main-wrapper">
+      <div class="inner-page-header">
+        <div class="container">
+          <h1 class="page-title">Магазин готовых шаблонов</h1>
+        </div>
       </div>
-      <div class="row templates-wrapper">
+      <div class="filters container">
+        <div class="filters-form-container">
+          <h2 class="visually-hidden">Фильтр шаблонов</h2>
+          <form class="filter-group" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="range-list">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="radio-list">
+              <legend>Сетка:</legend>
+              <ul class="radio-item">
+                <li class="filter-radio">
+                  <label class="radio-container">
+                    <input class="visually-hidden" type="radio" name="filter-group" id="adaptive-id" checked>
+                    <span class="radio-indicator"></span>
+                    Адаптивная
+                  </label>
+                </li>
+                <li class="filter-radio">
+                  <label class="radio-container">
+                    <input class="visually-hidden" type="radio" name="filter-group" id="fixed-id">
+                    <span class="radio-indicator"></span>
+                    Фиксированная
+                  </label>
+                </li>
+                <li class="filter-radio">
+                  <label class="radio-container">
+                    <input class="visually-hidden" type="radio" name="filter-group" id="rubber-id">
+                    <span class="radio-indicator"></span>
+                    Резиновая
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="checkbox-list">
+              <legend>Особенности:</legend>
+              <ul class="checkbox-item">
+                <li class="filter-checkbox">
+                  <label class="checkbox-container">
+                    <input class="visually-hidden" type="checkbox" name="slider" id="slider-id" checked>
+                    <span class="checkbox-indicator"></span>
+                    Слайдер
+                  </label>
+                </li>
+                <li class="filter-checkbox">
+                  <label class="checkbox-container">
+                    <input class="visually-hidden" type="checkbox" name="advantage-block" id="advantage-block-id">
+                    <span class="checkbox-indicator"></span>
+                    Блок преимуществ
+                  </label>
+                </li>
+                <li class="filter-checkbox">
+                  <label class="checkbox-container">
+                    <input class="visually-hidden" type="checkbox" name="tidings" id="tidings-id">
+                    <span class="checkbox-indicator"></span>
+                    Новости
+                  </label>
+                </li>
+                <li class="filter-checkbox">
+                  <label class="checkbox-container">
+                    <input class="visually-hidden" type="checkbox" name="gallery" id="gallery-id">
+                    <span class="checkbox-indicator"></span>
+                    Галерея
+                  </label>
+                </li>
+                <li class="filter-checkbox">
+                  <label class="checkbox-container">
+                    <input class="visually-hidden" type="checkbox" name="chip-basket" id="chip-basket-id">
+                    <span class="checkbox-indicator"></span>
+                    Корзина
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button button-show" type="submit">Показать</button>
+          </form>
+        </div>
+      </div>
+      <div class="templates-wrapper">
         <div class="sort">
           <h2 class="visually-hidden">Сортировка товара</h2>
           <b>Сортировать:</b>
           <div class="sort-container">
             <ul class="sort-by-class">
-              <li class="sort-item">
-                <a href="#">По цене</a>
-              </li>
-              <li class="sort-item">
-                <a href="#">По типу</a>
-              </li>
-              <li class="sort-item">
-                <a href="#">По названию</a>
-              </li>
+              <li class="sort-item"><a href="#">По цене</a></li>
+              <li class="sort-item"><a href="#">По типу</a></li>
+              <li class="sort-item"><a href="#">По названию</a></li>
             </ul>
             <ul class="sort-by-arrow">
               <li>
