@@ -141,7 +141,7 @@ a {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 104x;
+  bottom: 40%;
   z-index: 100;
   width: 160px;
   height: 18px;
@@ -197,20 +197,27 @@ a {
   padding: 78px 0 80px 0;
 }
 
+.slider-img {
+  width: 760px;
+  min-height: 415px;
+  margin-left: 384px;
+  margin-top: -304px;
+}
+
 .slider-item:nth-child(1) {
-  background-image: url("img/slide1.png");
+  /*background-image: url("../img/slide1.png");*/
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
 
 .slider-item:nth-child(2) {
-  background-image: url("img/slide2.png");
+  /*background-image: url("../img/slide2.png");*/
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .slider-item:nth-child(3) {
-  background-image: url("img/slide3.png");
+  /*background-image: url("../img/slide3.png");*/
   background-repeat: no-repeat;
   background-position: 100% 20px;
 }
@@ -508,6 +515,7 @@ a {
 
 .partners-item {
   position: relative;
+  padding-left: 70px;
 }
 
 .partners-item a {
@@ -536,15 +544,6 @@ a {
   margin-top: 58px;
 }
 
-.marker-container {
-  position: absolute;
-  top: 91px;
-  left: 56.6%;
-  width: 367px;
-  height: 190px;
-  z-index: 2;
-}
-
 .footer-contacts {
   width: 270px;
   background-color: white;
@@ -554,6 +553,7 @@ a {
   padding-top: 51px;
   position: absolute;
   top: 54px;
+  left: 140px;
 }
 
 .footer-contacts-header {
@@ -863,7 +863,7 @@ body {
 
 .container {
   width: 1160px;
-  padding: 0 20px;
+  /*padding: 0 20px;*/
   display: flex;
   flex-wrap: wrap;
 }
@@ -904,19 +904,19 @@ body {
 }
 
 .main-wrapper {
-  background-color: #eeeeee;
+  /*background-color: #eeeeee;*/
   /*margin:0;*/
   padding:0;
   margin-bottom: 78px;
 }
 
-.services {
+/*.services {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 80px;
   margin-top: 80px;
   border-bottom: 2px solid #eeeeee;
-  list-style: none;
+  list-style: none;*/
 }
 
 .feature-item {
@@ -934,26 +934,25 @@ body {
 }
 
 /* Catalog */
-.inner-page-header {
-  margin: 0;
-  padding: 0;
-  background-color: #eeeeee;
-}
-
-.inner-page-header .page-title{
-  margin: 78px auto 110px auto;
-}
-
-.page-title {
-  color: #000000;
+.catalog-header {
+  width: 100%;
   display: flex;
   justify-content: center;
-  width: 1519px;
-  padding-bottom: 107px;
+
+  background-color: #eeeeee;
+}
+.catalog-header h1 {
+  display: block;
+  width: 960px;
+  margin-top: 71px;
+  margin-bottom: 108px;
+  padding: 0;
   font-size: 55px;
-  line-height: 55px;
   font-weight: 500;
-  margin: 78px auto 110px auto;
+  line-height: 55px;
+  color: #000000;
+  text-align: center;
+  background-color: #eeeeee;
 }
 /*---------------------------------------------------------------*/
 .filter-group fieldset {
@@ -1211,27 +1210,14 @@ body {
 }
 
 .templates-wrapper {
-  width:760px;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-      -ms-flex-direction:column;
-          flex-direction:column;
+  display: flex;
+  flex-direction: column;
+  margin-top: 58px;
 }
 
 .sort {
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-wrap:wrap;
-      flex-wrap:wrap;
-  -webkit-box-align:center;
-     -ms-flex-align:center;
-          align-items:center;
-  padding:0;
-  margin:0;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -1299,19 +1285,21 @@ body {
 }
 
 .catalog {
-  width: 760px;
+  /*width: 760px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;*/
 }
 
 .catalog-list {
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 0;
-  padding-left: 0;
-  margin-bottom: 25px;
-  list-style: none;
+  width: 760px;
+  justify-content: space-between;
+  margin-bottom: 27px;
+  margin-top: 53px;
+  list-style-type: none;
 }
 
 .catalog-item {
@@ -1421,10 +1409,13 @@ body {
 }
 
 .main-pages {
+  padding: 0;
+  margin: 0;
   display: flex;
-  width: 760px;
-  justify-content: flex-start;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
+  max-width: 760px;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .pagination-list {
