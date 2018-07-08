@@ -309,7 +309,12 @@ a {
 
 .features-list {
   display: flex;
-  padding-left: 0;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .features-list .btn-link {
@@ -521,7 +526,7 @@ a {
 }
 
 .statistics-features-text span:last-of-type {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 /*---------------------------------------------------------------------------------------------*/
@@ -588,14 +593,13 @@ a {
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
   position: relative;
   background-repeat: no-repeat;
-  margin-top: 58px;
+  margin-top: -2px;
 }
 
 .footer-contacts {
-  width: 268px;
+  width: 269px;
   background-color: white;
   margin: 0;
   padding-left: 50px;
@@ -603,7 +607,7 @@ a {
   padding-top: 52px;
   position: absolute;
   top: 51px;
-  left: 17px;
+  left: 0px;
 }
 
 .footer-contacts-header {
@@ -1301,7 +1305,7 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin-top: 5px;
+  margin-top: 23px;
 }
 
 .sort-container {
@@ -1317,7 +1321,7 @@ body {
   flex-wrap: wrap;
   padding: 0;
   text-transform: uppercase;
-  margin-top: 5px;
+  margin-top: 25px;
   font-size: 14px;
   line-height: 18px;
 }
@@ -1493,6 +1497,7 @@ body {
 .pagination-list {
   padding-left: 0;
   list-style-type: none;
+  margin-bottom: 4px;
 }
 
 .pagination-list a {
